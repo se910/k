@@ -135,6 +135,16 @@ elif whattodo == '이론적 원리 탐구':
 else:
     # Header 적용
     st.header('2. 과학적 원리가 적용된 자세 교정 프로그램')
-    st.link_button("자세 교정 프로그램", "https://url.kr/8bkdnj")
-    st.image('chart.png', width = 300 , caption = "자세 교정 프로그램 QR 코드")
+    col5,col6 = st.columns([1,1])
+
+    with col5 :
+          # column 5 에 담을 내용
+             st.link_button("자세 교정 프로그램 (상체 위주)", "https://url.kr/8bkdnj")
+             st.image('12323.png', width = 200 , caption = "자세 교정 프로그램 QR 코드")
+    with col6 :
+          # column 6 에 담을 내용
+             st.link_button("자세 교정 프로그램 (하체 위주)", "https://teachablemachine.withgoogle.com/models/ewAeG-p7X/")
+             st.image('2323.png', width = 200 , caption = "자세 교정 프로그램 QR 코드")
+   
+    st.header('')      
     st.caption('아이폰 사용자일 경우 사용이 제한될 수 있습니다.')
